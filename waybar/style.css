@@ -1,0 +1,186 @@
+/* ============================= */
+/*        FOREST CABIN RICE      */
+/* ============================= */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 13px;
+    border: none;
+    min-height: 0;
+}
+
+/* Transparent main bar */
+window#waybar {
+    background: transparent;
+    color: #cdd6c4;
+}
+
+/* ============================= */
+/*        WORKSPACES             */
+/* ============================= */
+
+#workspaces {
+    margin: 6px 10px;
+    padding: 4px 12px;
+    background: rgba(20, 25, 20, 0.65);
+    border-radius: 16px;
+}
+
+#workspaces button {
+    padding: 4px 8px;
+    color: #6f7c6a;
+    background: transparent;
+    border-radius: 12px;
+}
+
+#workspaces button:hover {
+    background: rgba(40, 55, 40, 0.5);
+}
+
+#workspaces button.focused {
+    background: rgba(40, 55, 40, 0.8);
+    color: #f4c98d;
+}
+
+#workspaces button.urgent {
+    background: #cc241d;
+    color: #ffffff;
+}
+
+/* ============================= */
+/*        RIGHT MODULES          */
+/* ============================= */
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    margin: 6px 6px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: rgba(25, 32, 25, 0.70);
+    color: #cdd6c4;
+}
+
+/* ============================= */
+/*        INDIVIDUAL COLORS      */
+/* ============================= */
+
+/* Warm cabin glow */
+#clock {
+    color: #e6c48a;
+}
+
+/* Forest battery */
+#battery {
+    color: #8fae8b;
+}
+
+#battery.warning {
+    color: #d79921;
+}
+
+#battery.critical:not(.charging) {
+    background: #cc241d;
+    color: #ffffff;
+}
+
+/* Pine network */
+#network {
+    color: #7a9b76;
+}
+
+/* Soft amber audio */
+#pulseaudio {
+    color: #d7ba7d;
+}
+
+#pulseaudio.muted {
+    color: #7a7a7a;
+}
+
+/* ============================= */
+/*        TRAY                   */
+/* ============================= */
+
+#tray {
+    padding: 6px 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    background: #cc241d;
+}
+
+/* ============================= */
+/*        IDLE INHIBITOR         */
+/* ============================= */
+
+#idle_inhibitor {
+    margin: 6px 6px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: rgba(25, 32, 25, 0.70);
+}
+
+#idle_inhibitor.activated {
+    color: #e6c48a;
+}
+
+/* ============================= */
+/*        POWER PROFILE          */
+/* ============================= */
+
+#power-profiles-daemon {
+    margin: 6px 6px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: rgba(25, 32, 25, 0.70);
+}
+
+#power-profiles-daemon.performance {
+    color: #cc241d;
+}
+
+#power-profiles-daemon.balanced {
+    color: #7a9b76;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #8fae8b;
+}
+
+/* ============================= */
+/*        WINDOW TITLE           */
+/* ============================= */
+
+#window {
+    margin: 6px 10px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: rgba(20, 25, 20, 0.65);
+    color: #cdd6c4;
+}
+
+/* ============================= */
+/*        SMOOTH SHADOW          */
+/* ============================= */
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#workspaces,
+#window {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
